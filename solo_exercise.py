@@ -219,7 +219,7 @@ for config in model_configs:
         print(f"\n  Training with {opt_name}...")
         
         # TODO: Create fresh model instance (to reset parameters)
-        model = None  # TODO: Create new instance of config['model']
+        model = None  # TODO: Use the instance of config['model']
         model = model.to(device)
         
         criterion = nn.CrossEntropyLoss()
